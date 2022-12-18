@@ -22,7 +22,6 @@ class ViewModel(val repository: VideoRepository) : ViewModel(){
             //await
             val response = repository.getVideo(s)
             videoList.postValue(response)
-
         }
     }
 
